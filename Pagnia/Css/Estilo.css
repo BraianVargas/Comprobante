@@ -1,0 +1,129 @@
+:root{
+    --amarillo: #ffbb00;
+    --fondo: #2b2b2b;
+}
+
+* {
+    margin:  0;
+    padding:  0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--fondo);
+    font-family: 'Anton', sans-serif;
+
+}
+
+.cont{
+    width:  90%;
+    margin: auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .cont{
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+header .titulo{
+    font-family: 'Anton', sans-serif;
+    
+    color: var(--amarillo);
+    font-size: 30px;
+    
+}
+
+header nav a{
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+header nav a:hover,
+header nav a.activo{
+    color: #ffbb00
+}
+
+.crear{
+    color: white;
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+
+
+
+
+.tit{
+    color: rgb(255, 187, 0);
+    margin: 15px;
+    margin-block-end: auto;
+}
+
+.crear .nuevo{
+
+    color: rgb(223, 223, 223);
+    font-family: 'DM Mono', monospace;
+    font-size: 24px;
+    
+    
+    
+}
+
+.crear .nuevo input{
+    border-top-left-radius:4px;
+    border-top-right-radius:4px;
+    
+   
+    text-align: initial;
+    text-rendering:auto;
+    font-size: 20px;
+}
+
+.crear .bt{
+    color: black;
+    font-family: 'Anton', sans-serif;
+    font-size: 25px;
+    background-color: #ffbb00;
+    margin-top: 15px;
+    
+
+}
+ul li a:hover{
+    color: #ffbb00
+}
+
+ul li{
+
+    margin: 8px;
+}
+
+ul li a{
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+}
+.Formulario{
+   font-size: 25px;
+   align-items: center;
+   
+   
+}
+
+h4{
+    color: rgb(255, 187, 0);
+    margin: 30px;
+    margin-block-end: auto;
+}
+
+.lista{
+
+    color:black;
+    background-color: rgb(255, 187, 0);
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
