@@ -1,0 +1,145 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="Css/estilo.css">
+    <link rel="stylesheet" href="Css/Categorias.css">
+    <link rel="stylesheet" href="Oculta.js">
+    <title> Comprobante </title>
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <script>
+        $('#boton').click(function(){
+            $("#contenido").load("siguiente.html");
+        })
+    </script>
+</head>
+
+<body>
+    
+    <header>
+
+        
+        
+        <div class="cont">
+            <h2 class="titulo">Compra - Venta</h2>
+        <nav>
+            <a href="#" class="activo">Inicio</a>
+            <a href="#">Nuevo</a>
+            <a href="#">informacion</a>
+            <a href="#">Contaco</a>
+        </nav>
+    </div>
+    </header>
+
+    <main>
+
+        <div class="crear">
+            <div class="cont">
+                
+                <h3>Nuevo Formulario</h3>
+                <div class="nuevo">
+                    <p class="tit">DATOS DE VENDEDOR</p>
+                <p class="for">Nombre</p>
+                <input type="text" size="30" maxlength="45" placeholder="Nombre" name="nombre">
+                <p class="for">Apellido</p>
+                <input type="text" size="30" maxlength="45" placeholder="Apellido" name="apellido">
+                <p class="for">Domicilio</p>
+                <input type="text" size="30" maxlength="45" placeholder="Domicilio" name="domicilio">
+                <p class="for">Telefono</p>
+                <input type="text" size="30" maxlength="45" placeholder="Telefono" name="telefono">
+
+                <p class="tit">DATOS DE VENDEDOR</p>
+                <p class="for">Nombre</p>
+                <input type="text" size="30" maxlength="45" placeholder="Nombre" name="nombre2">
+                <p class="for">Apellido</p>
+                <input type="text" size="30" maxlength="45" placeholder="Apellido" name="apellido2">
+                <p class="for">Domicilio</p>
+                <input type="text" size="30" maxlength="45" placeholder="Domicilio" name="domicilio2">
+                <p class="for">Telefono</p>
+                <input type="text" size="30" maxlength="45" placeholder="Telefono" name="telefono2">
+
+                
+            </div>
+           
+        </div>
+        
+        <div class="Formulario">
+            <h4>CATEGORIA DEL ARTICULO</h4>
+            <ul>
+                <li>
+                    <input type="button" class="btn" id="btnElec" value="Electronico" onclick="Recargar()" >
+                    <script src="Oculta.js"></script>
+
+                    <section id="ContenidoElectronico">
+                        <a> Marca:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="Marca" name="marca">
+                        <br>
+                        <a> Modelo:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="Modelo" name="modelo"><br>
+                        <a> Color:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="Color" name="color">
+                        <br>
+                        <a> N° de serie:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="N° de serie" name="n serie">
+                        <br>
+                        <a> Estado:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="Estado" name="estado">
+                        <br>
+                        <a> Accesorios:</a>
+                        <br>
+                        <a id="si">Si</a><input type="checkbox" id="SI" onchange="accesorio()" >
+                        <a id="no">No</a><input type="checkbox" id="NO"  onchange="accesorio()">
+                        <br>
+                        <input type="text" size="30" maxlength="45" placeholder="Accesorios" id="accesorio">
+                    </section>
+                </li>
+
+                <li>
+                    <input type="button" class="btn" id="btnBici" value="Bicicleta" onclick="RecargarBic()" >
+                    <script src="Oculta.js"></script>
+
+                    <section id="ContBic">
+                        <a> Marca:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="Marca" name="marca">
+                        <br>
+                        <a> Modelo:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="Modelo" name="modelo">
+                        <br>
+                        <a> N° de serie:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="N° de serie" name="n serie">
+                        <br>
+                        <a> Marca:</a>
+                        <input type="text" size="30" maxlength="45" placeholder="Marca" name="marca">
+                        
+                    </section>
+                </li>
+               
+                <li>
+                    <a href="#" id="Indumentaria">Indumentaria</a>
+                </li>
+                <li>
+                    
+                    <a href="#" id="Mueble">Mueble</a>
+                </li>
+              
+                <li>
+                    
+                    <a href="#" id="Otro">Otro</a>
+                </li>
+
+            </ulv>
+
+            
+
+        </div>
+        
+        <input type="button" class="bt" id="boton" value="Siguiente" onclick="location.herf='siguiente.html'" >
+        </div>
+    </main>
+
+    <script src="JavaScript/metodos.js"></script>
+    
+
+</body>
+
+</html>
